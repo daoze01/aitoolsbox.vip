@@ -33,14 +33,6 @@
                         <div id="language-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="en">English</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="zh">中文</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="es">Español</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="fr">Français</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="de">Deutsch</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ja">日本語</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ko">한국어</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ru">Русский</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hi">हिंदी</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ar">العربية</a>
                         </div>
                     </div>
                     <a href="./index.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">Back to Home</a>
@@ -199,15 +191,7 @@
             function getLanguageName(code) {
                 const languages = {
                     'en': 'English',
-                    'zh': '中文',
-                    'es': 'Español',
-                    'fr': 'Français',
-                    'de': 'Deutsch',
-                    'ja': '日本語',
-                    'ko': '한국어',
-                    'ru': 'Русский',
-                    'hi': 'हिंदी',
-                    'ar': 'العربية'
+                    'zh': '中文'
                 };
                 return languages[code] || 'English';
             }
