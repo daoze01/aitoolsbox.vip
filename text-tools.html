@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text AI Tools - AI Tools Box</title>
+    <meta name="description" content="Explore the best AI text generation tools for content creation, writing, and more.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="./index.html" class="text-2xl font-bold text-white">AI Tools Box</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex space-x-4">
+                        <a href="./text-tools.html" class="text-blue-400">Text AI</a>
+                        <a href="./image-tools.html" class="text-gray-300 hover:text-white">Image AI</a>
+                        <a href="./data-tools.html" class="text-gray-300 hover:text-white">Data AI</a>
+                        <a href="./audio-tools.html" class="text-gray-300 hover:text-white">Audio AI</a>
+                    </div>
+                    <div class="relative">
+                        <button id="language-button" class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center">
+                            <span id="current-language">English</span>
+                            <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="language-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="en">English</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="zh">中文</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="es">Español</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="fr">Français</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="de">Deutsch</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ja">日本語</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ko">한국어</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ru">Русский</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hi">हिंदी</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ar">العربية</a>
+                        </div>
+                    </div>
+                    <a href="./index.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-12 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-6">Text AI Tools</h1>
+            <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto">Discover the most powerful AI tools for text generation, writing, and content creation.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- ChatGPT -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=chat.openai.com&sz=128" alt="ChatGPT" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">ChatGPT</h3>
+                <p class="text-gray-300 mb-4">OpenAI's flagship conversational model supporting natural dialogue, writing, and coding.</p>
+                <a href="https://chat.openai.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Claude -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=128" alt="Claude" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Claude</h3>
+                <p class="text-gray-300 mb-4">Anthropic's AI assistant, excelling in analysis and long-form text processing.</p>
+                <a href="https://claude.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Bard -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=bard.google.com&sz=128" alt="Bard" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Bard</h3>
+                <p class="text-gray-300 mb-4">Google's AI assistant with integrated search capabilities.</p>
+                <a href="https://bard.google.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Jasper -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=jasper.ai&sz=128" alt="Jasper" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Jasper</h3>
+                <p class="text-gray-300 mb-4">Professional AI marketing copy generation tool.</p>
+                <a href="https://www.jasper.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Copy.ai -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=copy.ai&sz=128" alt="Copy.ai" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Copy.ai</h3>
+                <p class="text-gray-300 mb-4">Fast generation of marketing copy and social media content.</p>
+                <a href="https://www.copy.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Notion AI -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=notion.so&sz=128" alt="Notion AI" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Notion AI</h3>
+                <p class="text-gray-300 mb-4">AI writing assistant integrated into Notion.</p>
+                <a href="https://www.notion.so" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Grammarly -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=grammarly.com&sz=128" alt="Grammarly" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Grammarly</h3>
+                <p class="text-gray-300 mb-4">AI-driven writing improvement and grammar checking tool.</p>
+                <a href="https://www.grammarly.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Writesonic -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=writesonic.com&sz=128" alt="Writesonic" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Writesonic</h3>
+                <p class="text-gray-300 mb-4">AI copy and blog post generation tool.</p>
+                <a href="https://writesonic.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Rytr -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=rytr.me&sz=128" alt="Rytr" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Rytr</h3>
+                <p class="text-gray-300 mb-4">Affordable AI writing assistant.</p>
+                <a href="https://rytr.me" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- QuillBot -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=quillbot.com&sz=128" alt="QuillBot" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">QuillBot</h3>
+                <p class="text-gray-300 mb-4">AI-driven paraphrasing and summarization tool.</p>
+                <a href="https://quillbot.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Wordtune -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=wordtune.com&sz=128" alt="Wordtune" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Wordtune</h3>
+                <p class="text-gray-300 mb-4">AI-driven writing improvement tool offering multiple expressions.</p>
+                <a href="https://www.wordtune.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Anyword -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=anyword.com&sz=128" alt="Anyword" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Anyword</h3>
+                <p class="text-gray-300 mb-4">AI-driven marketing copy optimization tool with data-driven suggestions.</p>
+                <a href="https://www.anyword.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AI Tools Box. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language selection functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageButton = document.getElementById('language-button');
+            const languageDropdown = document.getElementById('language-dropdown');
+            const currentLanguage = document.getElementById('current-language');
+            
+            // Check if language preference is stored
+            const savedLanguage = localStorage.getItem('preferred-language');
+            if (savedLanguage) {
+                currentLanguage.textContent = getLanguageName(savedLanguage);
+                applyLanguage(savedLanguage);
+            }
+            
+            // Toggle dropdown
+            languageButton.addEventListener('click', function() {
+                languageDropdown.classList.toggle('hidden');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!languageButton.contains(event.target) && !languageDropdown.contains(event.target)) {
+                    languageDropdown.classList.add('hidden');
+                }
+            });
+            
+            // Language selection
+            const languageLinks = document.querySelectorAll('#language-dropdown a');
+            languageLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lang = this.getAttribute('data-lang');
+                    currentLanguage.textContent = getLanguageName(lang);
+                    localStorage.setItem('preferred-language', lang);
+                    applyLanguage(lang);
+                    languageDropdown.classList.add('hidden');
+                });
+            });
+            
+            // Get language name
+            function getLanguageName(code) {
+                const languages = {
+                    'en': 'English',
+                    'zh': '中文',
+                    'es': 'Español',
+                    'fr': 'Français',
+                    'de': 'Deutsch',
+                    'ja': '日本語',
+                    'ko': '한국어',
+                    'ru': 'Русский',
+                    'hi': 'हिंदी',
+                    'ar': 'العربية'
+                };
+                return languages[code] || 'English';
+            }
+            
+            // Apply language
+            function applyLanguage(lang) {
+                const translations = {
+                    'en': {
+                        'title': 'Text AI Tools',
+                        'subtitle': 'Discover the most powerful AI tools for text generation, writing, and content creation.',
+                        'back-to-home': 'Back to Home',
+                        'visit-tool': 'Visit Tool →',
+                        'tools': {
+                            'chatgpt': 'OpenAI\'s flagship conversational model supporting natural dialogue, writing, and coding.',
+                            'claude': 'Anthropic\'s AI assistant, excelling in analysis and long-form text processing.',
+                            'bard': 'Google\'s AI assistant with integrated search capabilities.',
+                            'jasper': 'Professional AI marketing copy generation tool.',
+                            'copyai': 'Fast generation of marketing copy and social media content.',
+                            'notion': 'AI writing assistant integrated into Notion.',
+                            'grammarly': 'AI-driven writing improvement and grammar checking tool.',
+                            'writesonic': 'AI copy and blog post generation tool.',
+                            'rytr': 'Affordable AI writing assistant.',
+                            'quillbot': 'AI-driven paraphrasing and summarization tool.',
+                            'wordtune': 'AI-driven writing improvement tool offering multiple expressions.',
+                            'anyword': 'AI-driven marketing copy optimization tool with data-driven suggestions.'
+                        }
+                    },
+                    'zh': {
+                        'title': '文本AI工具',
+                        'subtitle': '发现最强大的AI文本生成、写作和内容创作工具。',
+                        'back-to-home': '返回首页',
+                        'visit-tool': '访问工具 →',
+                        'tools': {
+                            'chatgpt': 'OpenAI的旗舰对话模型，支持自然对话、写作和编程。',
+                            'claude': 'Anthropic的AI助手，擅长分析和长文本处理。',
+                            'bard': 'Google的AI助手，集成搜索功能。',
+                            'jasper': '专业的AI营销文案生成工具。',
+                            'copyai': '快速生成营销文案和社交媒体内容。',
+                            'notion': '集成在Notion中的AI写作助手。',
+                            'grammarly': 'AI驱动的写作改进和语法检查工具。',
+                            'writesonic': 'AI文案和博客文章生成工具。',
+                            'rytr': '经济实惠的AI写作助手。',
+                            'quillbot': 'AI驱动的改写和总结工具。',
+                            'wordtune': 'AI驱动的写作改进工具，提供多种表达方式。',
+                            'anyword': 'AI驱动的营销文案优化工具，提供数据驱动的建议。'
+                        }
+                    },
+                    'es': {
+                        'title': 'Herramientas de IA de Texto',
+                        'subtitle': 'Descubre las herramientas de IA más potentes para la generación de texto, escritura y creación de contenido.',
+                        'back-to-home': 'Volver al Inicio',
+                        'visit-tool': 'Visitar Herramienta →',
+                        'tools': {
+                            'chatgpt': 'Modelo conversacional insignia de OpenAI que admite diálogo natural, escritura y programación.',
+                            'claude': 'Asistente de IA de Anthropic, destacando en análisis y procesamiento de texto largo.',
+                            'bard': 'Asistente de IA de Google con capacidades de búsqueda integradas.',
+                            'jasper': 'Herramienta profesional de generación de copia de marketing con IA.',
+                            'copyai': 'Generación rápida de copia de marketing y contenido para redes sociales.',
+                            'notion': 'Asistente de escritura con IA integrado en Notion.',
+                            'grammarly': 'Herramienta de mejora de escritura y verificación gramatical impulsada por IA.',
+                            'writesonic': 'Herramienta de generación de copia y publicaciones de blog con IA.',
+                            'rytr': 'Asistente de escritura con IA asequible.',
+                            'quillbot': 'Herramienta de parafraseo y resumen impulsada por IA.',
+                            'wordtune': 'Herramienta de mejora de escritura impulsada por IA que ofrece múltiples expresiones.',
+                            'anyword': 'Herramienta de optimización de copia de marketing impulsada por IA con sugerencias basadas en datos.'
+                        }
+                    }
+                    // 可以继续添加其他语言的翻译
+                };
+                
+                // Apply translations if available
+                if (translations[lang]) {
+                    const t = translations[lang];
+                    
+                    // Update page title and subtitle
+                    document.querySelector('h1').textContent = t['title'];
+                    document.querySelector('header p').textContent = t['subtitle'];
+                    
+                    // Update "Back to Home" button
+                    document.querySelectorAll('a[href="./index.html"]').forEach(link => {
+                        if (link.classList.contains('bg-blue-600')) {
+                            link.textContent = t['back-to-home'];
+                        }
+                    });
+                    
+                    // Update tool descriptions
+                    const toolDescriptions = document.querySelectorAll('.bg-gray-800 p.text-gray-300');
+                    toolDescriptions.forEach(desc => {
+                        const toolName = desc.previousElementSibling.textContent.toLowerCase();
+                        if (t.tools[toolName]) {
+                            desc.textContent = t.tools[toolName];
+                        }
+                    });
+                    
+                    // Update "Visit Tool" links
+                    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                        if (link.textContent.includes('Visit Tool') || link.textContent.includes('访问工具')) {
+                            link.textContent = t['visit-tool'];
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

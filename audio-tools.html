@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio AI Tools - AI Tools Box</title>
+    <meta name="description" content="Explore the best AI tools for audio generation and editing.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="./index.html" class="text-2xl font-bold text-white">AI Tools Box</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex space-x-4">
+                        <a href="./text-tools.html" class="text-gray-300 hover:text-white">Text AI</a>
+                        <a href="./image-tools.html" class="text-gray-300 hover:text-white">Image AI</a>
+                        <a href="./data-tools.html" class="text-gray-300 hover:text-white">Data AI</a>
+                        <a href="./audio-tools.html" class="text-blue-400">Audio AI</a>
+                    </div>
+                    <div class="relative">
+                        <button id="language-button" class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center">
+                            <span id="current-language">English</span>
+                            <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="language-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="en">English</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="zh">中文</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="es">Español</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="fr">Français</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="de">Deutsch</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ja">日本語</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ko">한국어</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ru">Русский</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hi">हिंदी</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ar">العربية</a>
+                        </div>
+                    </div>
+                    <a href="./index.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-12 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-6">Audio AI Tools</h1>
+            <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto">Discover the most powerful AI tools for audio generation, voice synthesis, and sound processing.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- ElevenLabs -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128" alt="ElevenLabs" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">ElevenLabs</h3>
+                <p class="text-gray-300 mb-4">Cutting-edge AI voice synthesis tool supporting multiple languages.</p>
+                <a href="https://elevenlabs.io" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Descript -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=descript.com&sz=128" alt="Descript" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Descript</h3>
+                <p class="text-gray-300 mb-4">AI-driven audio and video editing tool with transcription capabilities.</p>
+                <a href="https://www.descript.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Murf -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=murf.ai&sz=128" alt="Murf" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Murf</h3>
+                <p class="text-gray-300 mb-4">Professional AI voiceover tool for video production.</p>
+                <a href="https://murf.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Resemble AI -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=resemble.ai&sz=128" alt="Resemble AI" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Resemble AI</h3>
+                <p class="text-gray-300 mb-4">Professional platform for AI voice cloning and customization.</p>
+                <a href="https://www.resemble.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Play.ht -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=play.ht&sz=128" alt="Play.ht" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Play.ht</h3>
+                <p class="text-gray-300 mb-4">AI voice generator supporting multiple languages and voices.</p>
+                <a href="https://play.ht" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Synthesia -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=synthesia.io&sz=128" alt="Synthesia" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Synthesia</h3>
+                <p class="text-gray-300 mb-4">AI video generation platform with high-quality voiceover features.</p>
+                <a href="https://www.synthesia.io" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Speechify -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=speechify.com&sz=128" alt="Speechify" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Speechify</h3>
+                <p class="text-gray-300 mb-4">AI tool that converts text to natural-sounding speech.</p>
+                <a href="https://speechify.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Otter.ai -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=otter.ai&sz=128" alt="Otter.ai" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Otter.ai</h3>
+                <p class="text-gray-300 mb-4">AI-powered real-time transcription and meeting notes tool.</p>
+                <a href="https://otter.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Adobe Podcast -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=adobe.com&sz=128" alt="Adobe Podcast" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Adobe Podcast</h3>
+                <p class="text-gray-300 mb-4">AI-powered podcast recording and editing tool.</p>
+                <a href="https://podcast.adobe.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Sonantic -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=sonantic.io&sz=128" alt="Sonantic" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Sonantic</h3>
+                <p class="text-gray-300 mb-4">Emotional AI voice generation tool for film production.</p>
+                <a href="https://www.sonantic.io" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Voice.ai -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=voice.ai&sz=128" alt="Voice.ai" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Voice.ai</h3>
+                <p class="text-gray-300 mb-4">实时AI语音转换和克隆工具。</p>
+                <a href="https://voice.ai" target="_blank" class="text-blue-400 hover:text-blue-300">访问工具 →</a>
+            </div>
+            <!-- Coqui -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=coqui.ai&sz=128" alt="Coqui" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Coqui</h3>
+                <p class="text-gray-300 mb-4">开源的多语言AI语音合成平台。</p>
+                <a href="https://coqui.ai" target="_blank" class="text-blue-400 hover:text-blue-300">访问工具 →</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AI Tools Box. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language selection functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageButton = document.getElementById('language-button');
+            const languageDropdown = document.getElementById('language-dropdown');
+            const currentLanguage = document.getElementById('current-language');
+            
+            // Check if language preference is stored
+            const savedLanguage = localStorage.getItem('preferred-language');
+            if (savedLanguage) {
+                currentLanguage.textContent = getLanguageName(savedLanguage);
+                applyLanguage(savedLanguage);
+            }
+            
+            // Toggle dropdown
+            languageButton.addEventListener('click', function() {
+                languageDropdown.classList.toggle('hidden');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!languageButton.contains(event.target) && !languageDropdown.contains(event.target)) {
+                    languageDropdown.classList.add('hidden');
+                }
+            });
+            
+            // Language selection
+            const languageLinks = document.querySelectorAll('#language-dropdown a');
+            languageLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lang = this.getAttribute('data-lang');
+                    currentLanguage.textContent = getLanguageName(lang);
+                    localStorage.setItem('preferred-language', lang);
+                    applyLanguage(lang);
+                    languageDropdown.classList.add('hidden');
+                });
+            });
+            
+            // Get language name
+            function getLanguageName(code) {
+                const languages = {
+                    'en': 'English',
+                    'zh': '中文',
+                    'es': 'Español',
+                    'fr': 'Français',
+                    'de': 'Deutsch',
+                    'ja': '日本語',
+                    'ko': '한국어',
+                    'ru': 'Русский',
+                    'hi': 'हिंदी',
+                    'ar': 'العربية'
+                };
+                return languages[code] || 'English';
+            }
+            
+            // Apply language
+            function applyLanguage(lang) {
+                const translations = {
+                    'en': {
+                        'title': 'Audio AI Tools',
+                        'subtitle': 'Discover the most powerful AI tools for audio generation, voice synthesis, and sound processing.',
+                        'back-to-home': 'Back to Home',
+                        'visit-tool': 'Visit Tool →',
+                        'tools': {
+                            'elevenlabs': 'Cutting-edge AI voice synthesis tool supporting multiple languages.',
+                            'descript': 'AI-driven audio and video editing tool with transcription capabilities.',
+                            'murf': 'Professional AI voiceover tool for video production.',
+                            'resemble-ai': 'Professional platform for AI voice cloning and customization.',
+                            'play-ht': 'AI voice generator supporting multiple languages and voices.',
+                            'synthesia': 'AI video generation platform with high-quality voiceover features.',
+                            'speechify': 'AI tool that converts text to natural-sounding speech.',
+                            'otter-ai': 'AI-powered real-time transcription and meeting notes tool.',
+                            'adobe-podcast': 'AI-powered podcast recording and editing tool.',
+                            'sonantic': 'Emotional AI voice generation tool for film production.',
+                            'voice-ai': 'Real-time AI voice conversion and cloning tool.',
+                            'coqui': 'Open-source multilingual AI voice synthesis platform.'
+                        }
+                    },
+                    'zh': {
+                        'title': '音频AI工具',
+                        'subtitle': '发现最强大的AI音频生成、语音合成和声音处理工具。',
+                        'back-to-home': '返回首页',
+                        'visit-tool': '访问工具 →',
+                        'tools': {
+                            'elevenlabs': '支持多语言的前沿AI语音合成工具。',
+                            'descript': '具有转录功能的AI驱动的音频和视频编辑工具。',
+                            'murf': '用于视频制作的专业AI配音工具。',
+                            'resemble-ai': '用于AI语音克隆和定制的专业平台。',
+                            'play-ht': '支持多种语言和声音的AI语音生成器。',
+                            'synthesia': '具有高质量配音功能的AI视频生成平台。',
+                            'speechify': '将文本转换为自然语音的AI工具。',
+                            'otter-ai': 'AI驱动的实时转录和会议记录工具。',
+                            'adobe-podcast': 'AI驱动的播客录制和编辑工具。',
+                            'sonantic': '用于电影制作的情感AI语音生成工具。',
+                            'voice-ai': '实时AI语音转换和克隆工具。',
+                            'coqui': '开源的多语言AI语音合成平台。'
+                        }
+                    },
+                    'es': {
+                        'title': 'Herramientas de IA de Audio',
+                        'subtitle': 'Descubre las herramientas de IA más potentes para la generación de audio, síntesis de voz y procesamiento de sonido.',
+                        'back-to-home': 'Volver al Inicio',
+                        'visit-tool': 'Visitar Herramienta →',
+                        'tools': {
+                            'elevenlabs': 'Herramienta de síntesis de voz con IA de vanguardia que admite múltiples idiomas.',
+                            'descript': 'Herramienta de edición de audio y video impulsada por IA con capacidades de transcripción.',
+                            'murf': 'Herramienta profesional de doblaje con IA para producción de video.',
+                            'resemble-ai': 'Plataforma profesional para clonación y personalización de voz con IA.',
+                            'play-ht': 'Generador de voz con IA que admite múltiples idiomas y voces.',
+                            'synthesia': 'Plataforma de generación de video con IA con funciones de doblaje de alta calidad.',
+                            'speechify': 'Herramienta de IA que convierte texto en voz natural.',
+                            'otter-ai': 'Herramienta de transcripción y notas de reuniones en tiempo real impulsada por IA.',
+                            'adobe-podcast': 'Herramienta de grabación y edición de podcasts impulsada por IA.',
+                            'sonantic': 'Herramienta de generación de voz con IA emocional para producción cinematográfica.',
+                            'voice-ai': 'Herramienta de conversión y clonación de voz con IA en tiempo real.',
+                            'coqui': 'Plataforma de síntesis de voz multilingüe con IA de código abierto.'
+                        }
+                    }
+                    // 可以继续添加其他语言的翻译
+                };
+                
+                // Apply translations if available
+                if (translations[lang]) {
+                    const t = translations[lang];
+                    
+                    // Update page title and subtitle
+                    document.querySelector('h1').textContent = t['title'];
+                    document.querySelector('header p').textContent = t['subtitle'];
+                    
+                    // Update "Back to Home" button
+                    document.querySelectorAll('a[href="./index.html"]').forEach(link => {
+                        if (link.classList.contains('bg-blue-600')) {
+                            link.textContent = t['back-to-home'];
+                        }
+                    });
+                    
+                    // Update tool descriptions
+                    const toolDescriptions = document.querySelectorAll('.bg-gray-800 p.text-gray-300');
+                    toolDescriptions.forEach(desc => {
+                        const toolName = desc.previousElementSibling.textContent.toLowerCase().replace(/\s+/g, '-');
+                        if (t.tools[toolName]) {
+                            desc.textContent = t.tools[toolName];
+                        }
+                    });
+                    
+                    // Update "Visit Tool" links
+                    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                        if (link.textContent.includes('Visit Tool') || link.textContent.includes('访问工具')) {
+                            link.textContent = t['visit-tool'];
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

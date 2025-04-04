@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Box - Your Ultimate AI Tools Directory | aitoolsbox.vip</title>
+    <meta name="description" content="Discover the best AI tools for your needs. Browse our curated collection of AI tools for text generation, image creation, data analysis, and more.">
+    <link rel="canonical" href="https://aitoolsbox.vip">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-white">AI Tools Box</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex space-x-4">
+                        <a href="#text-tools" class="text-gray-300 hover:text-white">Text AI</a>
+                        <a href="#image-tools" class="text-gray-300 hover:text-white">Image AI</a>
+                        <a href="#data-tools" class="text-gray-300 hover:text-white">Data AI</a>
+                        <a href="#audio-tools" class="text-gray-300 hover:text-white">Audio AI</a>
+                    </div>
+                    <div class="relative">
+                        <button id="language-button" class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center">
+                            <span id="current-language">English</span>
+                            <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="language-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="en">English</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="zh">中文</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-24 pb-12 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-6">AI Tools Box</h1>
+            <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto">Discover the most powerful AI tools for text, image, data, and audio generation.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Text AI Tools Section -->
+        <section id="text-tools" class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-white">Text AI Tools</h2>
+                <a href="./text-tools.html" class="text-blue-400 hover:text-blue-300">View More →</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- ChatGPT -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=chat.openai.com&sz=128" alt="ChatGPT" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">ChatGPT</h3>
+                    <p class="text-gray-300 mb-4">Advanced language model for text generation and conversation.</p>
+                    <a href="https://chat.openai.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Claude -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=128" alt="Claude" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Claude</h3>
+                    <p class="text-gray-300 mb-4">Anthropic's AI assistant for writing, analysis, and coding.</p>
+                    <a href="https://claude.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Jasper -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=jasper.ai&sz=128" alt="Jasper" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Jasper</h3>
+                    <p class="text-gray-300 mb-4">AI content generator for marketing and copywriting.</p>
+                    <a href="https://www.jasper.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Copy.ai -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=copy.ai&sz=128" alt="Copy.ai" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Copy.ai</h3>
+                    <p class="text-gray-300 mb-4">AI-powered copywriting tool for marketing content.</p>
+                    <a href="https://www.copy.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image AI Tools Section -->
+        <section id="image-tools" class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-white">Image AI Tools</h2>
+                <a href="./image-tools.html" class="text-blue-400 hover:text-blue-300">View More →</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Midjourney -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=midjourney.com&sz=128" alt="Midjourney" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Midjourney</h3>
+                    <p class="text-gray-300 mb-4">AI art generator for creating stunning visuals.</p>
+                    <a href="https://www.midjourney.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- DALL-E -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=labs.openai.com&sz=128" alt="DALL-E" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">DALL-E</h3>
+                    <p class="text-gray-300 mb-4">OpenAI's AI system for creating realistic images.</p>
+                    <a href="https://labs.openai.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Stable Diffusion -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=stability.ai&sz=128" alt="Stable Diffusion" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Stable Diffusion</h3>
+                    <p class="text-gray-300 mb-4">Open-source image generation model.</p>
+                    <a href="https://stability.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Canva AI -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=128" alt="Canva AI" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Canva AI</h3>
+                    <p class="text-gray-300 mb-4">AI-powered design tool for creating visuals.</p>
+                    <a href="https://www.canva.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data AI Tools Section -->
+        <section id="data-tools" class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-white">Data AI Tools</h2>
+                <a href="./data-tools.html" class="text-blue-400 hover:text-blue-300">View More →</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Tableau -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=tableau.com&sz=128" alt="Tableau" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Tableau</h3>
+                    <p class="text-gray-300 mb-4">AI-powered data visualization and analytics.</p>
+                    <a href="https://www.tableau.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Power BI -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=powerbi.microsoft.com&sz=128" alt="Power BI" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Power BI</h3>
+                    <p class="text-gray-300 mb-4">Microsoft's business analytics solution.</p>
+                    <a href="https://powerbi.microsoft.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Looker -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=looker.com&sz=128" alt="Looker" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Looker</h3>
+                    <p class="text-gray-300 mb-4">Google's business intelligence platform.</p>
+                    <a href="https://looker.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Qlik -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=qlik.com&sz=128" alt="Qlik" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Qlik</h3>
+                    <p class="text-gray-300 mb-4">AI-driven analytics and business intelligence.</p>
+                    <a href="https://www.qlik.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio AI Tools Section -->
+        <section id="audio-tools" class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-white">Audio AI Tools</h2>
+                <a href="./audio-tools.html" class="text-blue-400 hover:text-blue-300">View More →</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- ElevenLabs -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=elevenlabs.io&sz=128" alt="ElevenLabs" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">ElevenLabs</h3>
+                    <p class="text-gray-300 mb-4">AI voice synthesis and text-to-speech.</p>
+                    <a href="https://elevenlabs.io" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Descript -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=descript.com&sz=128" alt="Descript" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Descript</h3>
+                    <p class="text-gray-300 mb-4">AI-powered audio and video editing.</p>
+                    <a href="https://www.descript.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Murf -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=murf.ai&sz=128" alt="Murf" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Murf</h3>
+                    <p class="text-gray-300 mb-4">AI voice generator for content creation.</p>
+                    <a href="https://murf.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+                <!-- Resemble AI -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 tool-card">
+                    <img src="https://www.google.com/s2/favicons?domain=resemble.ai&sz=128" alt="Resemble AI" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                    <h3 class="text-lg font-semibold text-white mb-2">Resemble AI</h3>
+                    <p class="text-gray-300 mb-4">Custom AI voice generation platform.</p>
+                    <a href="https://www.resemble.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">AI Tools Box</h3>
+                    <p class="text-gray-400">Your ultimate directory for AI-powered tools and resources.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#text-tools" class="text-gray-400 hover:text-white">Text AI</a></li>
+                        <li><a href="#image-tools" class="text-gray-400 hover:text-white">Image AI</a></li>
+                        <li><a href="#data-tools" class="text-gray-400 hover:text-white">Data AI</a></li>
+                        <li><a href="#audio-tools" class="text-gray-400 hover:text-white">Audio AI</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="/contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="/privacy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with the latest AI tools and trends.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none bg-gray-700 text-white placeholder-gray-400">
+                        <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AI Tools Box. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language selection functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageButton = document.getElementById('language-button');
+            const languageDropdown = document.getElementById('language-dropdown');
+            const currentLanguage = document.getElementById('current-language');
+            
+            // Check if language preference is stored
+            const savedLanguage = localStorage.getItem('preferred-language');
+            if (savedLanguage) {
+                currentLanguage.textContent = getLanguageName(savedLanguage);
+                applyLanguage(savedLanguage);
+            }
+            
+            // Toggle dropdown
+            languageButton.addEventListener('click', function() {
+                languageDropdown.classList.toggle('hidden');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!languageButton.contains(event.target) && !languageDropdown.contains(event.target)) {
+                    languageDropdown.classList.add('hidden');
+                }
+            });
+            
+            // Language selection
+            const languageLinks = document.querySelectorAll('#language-dropdown a');
+            languageLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lang = this.getAttribute('data-lang');
+                    currentLanguage.textContent = getLanguageName(lang);
+                    localStorage.setItem('preferred-language', lang);
+                    applyLanguage(lang);
+                    languageDropdown.classList.add('hidden');
+                });
+            });
+            
+            // Get language name
+            function getLanguageName(code) {
+                const languages = {
+                    'en': 'English',
+                    'zh': '中文'
+                };
+                return languages[code] || 'English';
+            }
+            
+            // Apply language
+            function applyLanguage(lang) {
+                const translations = {
+                    'en': {
+                        'title': 'AI Tools Box',
+                        'subtitle': 'Discover the most powerful AI tools for text, image, data, and audio generation.',
+                        'text-ai': 'Text AI',
+                        'image-ai': 'Image AI',
+                        'data-ai': 'Data AI',
+                        'audio-ai': 'Audio AI',
+                        'view-more': 'View More →',
+                        'visit-tool': 'Visit Tool →',
+                        'tools': {
+                            'chatgpt': 'Advanced language model for text generation and conversation.',
+                            'claude': 'Anthropic\'s AI assistant for writing, analysis, and coding.',
+                            'jasper': 'AI content generator for marketing and copywriting.',
+                            'copy-ai': 'AI-powered copywriting tool for marketing content.',
+                            'midjourney': 'AI art generator for creating stunning visuals.',
+                            'dall-e': 'OpenAI\'s AI system for creating realistic images.',
+                            'stable-diffusion': 'Open-source image generation model.',
+                            'canva-ai': 'AI-powered design tool for creating visuals.',
+                            'tableau': 'AI-powered data visualization and analytics.',
+                            'power-bi': 'Microsoft\'s business analytics solution.',
+                            'looker': 'Google\'s business intelligence platform.',
+                            'qlik': 'AI-driven analytics and business intelligence.',
+                            'elevenlabs': 'AI voice synthesis and text-to-speech.',
+                            'descript': 'AI-powered audio and video editing.',
+                            'murf': 'AI voice generator for content creation.',
+                            'resemble-ai': 'Custom AI voice generation platform.'
+                        }
+                    },
+                    'zh': {
+                        'title': 'AI工具盒',
+                        'subtitle': '发现最强大的AI文本、图像、数据和音频生成工具。',
+                        'text-ai': '文本AI',
+                        'image-ai': '图像AI',
+                        'data-ai': '数据AI',
+                        'audio-ai': '音频AI',
+                        'view-more': '查看更多 →',
+                        'visit-tool': '访问工具 →',
+                        'tools': {
+                            'chatgpt': '用于文本生成和对话的高级语言模型。',
+                            'claude': 'Anthropic的AI助手，用于写作、分析和编程。',
+                            'jasper': '用于营销和文案的AI内容生成器。',
+                            'copy-ai': '用于营销内容的AI驱动文案工具。',
+                            'midjourney': '用于创建精美视觉效果的AI艺术生成器。',
+                            'dall-e': 'OpenAI的AI系统，用于创建逼真图像。',
+                            'stable-diffusion': '开源图像生成模型。',
+                            'canva-ai': '用于创建视觉效果的AI驱动设计工具。',
+                            'tableau': 'AI驱动的数据可视化和分析。',
+                            'power-bi': '微软的商业分析解决方案。',
+                            'looker': '谷歌的商业智能平台。',
+                            'qlik': 'AI驱动的分析和商业智能。',
+                            'elevenlabs': 'AI语音合成和文本转语音。',
+                            'descript': 'AI驱动的音频和视频编辑。',
+                            'murf': '用于内容创作的AI语音生成器。',
+                            'resemble-ai': '自定义AI语音生成平台。'
+                        }
+                    }
+                };
+                
+                if (translations[lang]) {
+                    const t = translations[lang];
+                    
+                    // 更新页面标题和副标题
+                    document.querySelector('h1').textContent = t['title'];
+                    document.querySelector('header p').textContent = t['subtitle'];
+                    
+                    // 更新分类标题
+                    document.querySelectorAll('h2').forEach(h2 => {
+                        if (h2.textContent.includes('Text AI')) h2.textContent = t['text-ai'];
+                        if (h2.textContent.includes('Image AI')) h2.textContent = t['image-ai'];
+                        if (h2.textContent.includes('Data AI')) h2.textContent = t['data-ai'];
+                        if (h2.textContent.includes('Audio AI')) h2.textContent = t['audio-ai'];
+                    });
+                    
+                    // 更新导航链接
+                    document.querySelectorAll('a[href="#text-tools"]').forEach(link => {
+                        link.textContent = t['text-ai'];
+                    });
+                    document.querySelectorAll('a[href="#image-tools"]').forEach(link => {
+                        link.textContent = t['image-ai'];
+                    });
+                    document.querySelectorAll('a[href="#data-tools"]').forEach(link => {
+                        link.textContent = t['data-ai'];
+                    });
+                    document.querySelectorAll('a[href="#audio-tools"]').forEach(link => {
+                        link.textContent = t['audio-ai'];
+                    });
+                    
+                    // 更新"查看更多"链接
+                    document.querySelectorAll('a[href*="tools.html"]').forEach(link => {
+                        if (link.textContent.includes('View More')) {
+                            link.textContent = t['view-more'];
+                        }
+                    });
+                    
+                    // 更新"访问工具"链接
+                    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                        if (link.textContent.includes('Visit Tool')) {
+                            link.textContent = t['visit-tool'];
+                        }
+                    });
+                    
+                    // 更新工具描述
+                    document.querySelectorAll('.tool-card').forEach(card => {
+                        const toolName = card.querySelector('h3').textContent.toLowerCase().replace(/\s+/g, '-');
+                        const description = card.querySelector('p.text-gray-300');
+                        if (t.tools[toolName]) {
+                            description.textContent = t.tools[toolName];
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

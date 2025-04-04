@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data AI Tools - AI Tools Box</title>
+    <meta name="description" content="Explore the best AI tools for data analysis and visualization.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="./index.html" class="text-2xl font-bold text-white">AI Tools Box</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex space-x-4">
+                        <a href="./text-tools.html" class="text-gray-300 hover:text-white">Text AI</a>
+                        <a href="./image-tools.html" class="text-gray-300 hover:text-white">Image AI</a>
+                        <a href="./data-tools.html" class="text-blue-400">Data AI</a>
+                        <a href="./audio-tools.html" class="text-gray-300 hover:text-white">Audio AI</a>
+                    </div>
+                    <div class="relative">
+                        <button id="language-button" class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center">
+                            <span id="current-language">English</span>
+                            <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="language-dropdown" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 rounded-md shadow-lg py-1 z-50">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="en">English</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="zh">中文</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="es">Español</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="fr">Français</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="de">Deutsch</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ja">日本語</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ko">한국어</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ru">Русский</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="hi">हिंदी</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white" data-lang="ar">العربية</a>
+                        </div>
+                    </div>
+                    <a href="./index.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-12 bg-gradient-to-r from-gray-800 to-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-bold text-white text-center mb-6">Data AI Tools</h1>
+            <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto">Discover the most powerful AI tools for data analysis, visualization, and machine learning.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Tableau -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=tableau.com&sz=128" alt="Tableau" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Tableau</h3>
+                <p class="text-gray-300 mb-4">Leading data visualization and business intelligence platform.</p>
+                <a href="https://www.tableau.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Power BI -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=powerbi.microsoft.com&sz=128" alt="Power BI" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Power BI</h3>
+                <p class="text-gray-300 mb-4">Microsoft's business analytics and visualization tool.</p>
+                <a href="https://powerbi.microsoft.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Looker -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=looker.com&sz=128" alt="Looker" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Looker</h3>
+                <p class="text-gray-300 mb-4">Business intelligence and data analytics platform.</p>
+                <a href="https://www.looker.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Qlik -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=qlik.com&sz=128" alt="Qlik" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Qlik</h3>
+                <p class="text-gray-300 mb-4">AI驱动的数据分析和可视化平台。</p>
+                <a href="https://www.qlik.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- DataRobot -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=datarobot.com&sz=128" alt="DataRobot" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">DataRobot</h3>
+                <p class="text-gray-300 mb-4">Enterprise AI platform for automated machine learning.</p>
+                <a href="https://www.datarobot.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- H2O.ai -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=h2o.ai&sz=128" alt="H2O.ai" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">H2O.ai</h3>
+                <p class="text-gray-300 mb-4">Open-source AI platform for machine learning and data science.</p>
+                <a href="https://www.h2o.ai" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- RapidMiner -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=rapidminer.com&sz=128" alt="RapidMiner" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">RapidMiner</h3>
+                <p class="text-gray-300 mb-4">Data science platform for machine learning and predictive analytics.</p>
+                <a href="https://rapidminer.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Databricks -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=databricks.com&sz=128" alt="Databricks" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Databricks</h3>
+                <p class="text-gray-300 mb-4">Unified analytics platform for big data and AI.</p>
+                <a href="https://www.databricks.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Dataiku -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=dataiku.com&sz=128" alt="Dataiku" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Dataiku</h3>
+                <p class="text-gray-300 mb-4">Collaborative data science and machine learning platform.</p>
+                <a href="https://www.dataiku.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- Alteryx -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=alteryx.com&sz=128" alt="Alteryx" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">Alteryx</h3>
+                <p class="text-gray-300 mb-4">End-to-end data analytics and machine learning platform.</p>
+                <a href="https://www.alteryx.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- KNIME -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=knime.com&sz=128" alt="KNIME" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">KNIME</h3>
+                <p class="text-gray-300 mb-4">Open-source data analytics and machine learning platform.</p>
+                <a href="https://www.knime.com" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+            <!-- RapidMiner Studio -->
+            <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6">
+                <img src="https://www.google.com/s2/favicons?domain=rapidminer.com&sz=128" alt="RapidMiner Studio" class="w-12 h-12 mb-4 object-contain bg-white rounded-lg p-2">
+                <h3 class="text-lg font-semibold text-white mb-2">RapidMiner Studio</h3>
+                <p class="text-gray-300 mb-4">完整的数据科学和机器学习工作流平台。</p>
+                <a href="https://rapidminer.com/products/studio/" target="_blank" class="text-blue-400 hover:text-blue-300">Visit Tool →</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 AI Tools Box. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language selection functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageButton = document.getElementById('language-button');
+            const languageDropdown = document.getElementById('language-dropdown');
+            const currentLanguage = document.getElementById('current-language');
+            
+            // Check if language preference is stored
+            const savedLanguage = localStorage.getItem('preferred-language');
+            if (savedLanguage) {
+                currentLanguage.textContent = getLanguageName(savedLanguage);
+                applyLanguage(savedLanguage);
+            }
+            
+            // Toggle dropdown
+            languageButton.addEventListener('click', function() {
+                languageDropdown.classList.toggle('hidden');
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!languageButton.contains(event.target) && !languageDropdown.contains(event.target)) {
+                    languageDropdown.classList.add('hidden');
+                }
+            });
+            
+            // Language selection
+            const languageLinks = document.querySelectorAll('#language-dropdown a');
+            languageLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const lang = this.getAttribute('data-lang');
+                    currentLanguage.textContent = getLanguageName(lang);
+                    localStorage.setItem('preferred-language', lang);
+                    applyLanguage(lang);
+                    languageDropdown.classList.add('hidden');
+                });
+            });
+            
+            // Get language name
+            function getLanguageName(code) {
+                const languages = {
+                    'en': 'English',
+                    'zh': '中文',
+                    'es': 'Español',
+                    'fr': 'Français',
+                    'de': 'Deutsch',
+                    'ja': '日本語',
+                    'ko': '한국어',
+                    'ru': 'Русский',
+                    'hi': 'हिंदी',
+                    'ar': 'العربية'
+                };
+                return languages[code] || 'English';
+            }
+            
+            // Apply language
+            function applyLanguage(lang) {
+                const translations = {
+                    'en': {
+                        'title': 'Data AI Tools',
+                        'subtitle': 'Discover the most powerful AI tools for data analysis, visualization, and machine learning.',
+                        'back-to-home': 'Back to Home',
+                        'visit-tool': 'Visit Tool →',
+                        'tools': {
+                            'tableau': 'Leading data visualization and business intelligence platform.',
+                            'power-bi': 'Microsoft\'s business analytics and visualization tool.',
+                            'looker': 'Business intelligence and data analytics platform.',
+                            'qlik': 'AI-powered data analytics and visualization platform.',
+                            'datarobot': 'Enterprise AI platform for automated machine learning.',
+                            'h2o-ai': 'Open-source AI platform for machine learning and data science.',
+                            'rapidminer': 'Data science platform for machine learning and predictive analytics.',
+                            'databricks': 'Unified analytics platform for big data and AI.',
+                            'dataiku': 'Collaborative data science and machine learning platform.',
+                            'alteryx': 'End-to-end data analytics and machine learning platform.',
+                            'knime': 'Open-source data analytics and machine learning platform.',
+                            'rapidminer-studio': 'Complete data science and machine learning workflow platform.'
+                        }
+                    },
+                    'zh': {
+                        'title': '数据AI工具',
+                        'subtitle': '发现最强大的AI数据分析、可视化和机器学习工具。',
+                        'back-to-home': '返回首页',
+                        'visit-tool': '访问工具 →',
+                        'tools': {
+                            'tableau': '领先的数据可视化和商业智能平台。',
+                            'power-bi': '微软的商业分析和可视化工具。',
+                            'looker': '商业智能和数据分析平台。',
+                            'qlik': 'AI驱动的数据分析和可视化平台。',
+                            'datarobot': '企业级AI平台，用于自动化机器学习。',
+                            'h2o-ai': '用于机器学习和数据科学的开源AI平台。',
+                            'rapidminer': '用于机器学习和预测分析的数据科学平台。',
+                            'databricks': '用于大数据和AI的统一分析平台。',
+                            'dataiku': '协作式数据科学和机器学习平台。',
+                            'alteryx': '端到端数据分析和机器学习平台。',
+                            'knime': '开源数据分析和机器学习平台。',
+                            'rapidminer-studio': '完整的数据科学和机器学习工作流平台。'
+                        }
+                    },
+                    'es': {
+                        'title': 'Herramientas de IA de Datos',
+                        'subtitle': 'Descubre las herramientas de IA más potentes para análisis de datos, visualización y aprendizaje automático.',
+                        'back-to-home': 'Volver al Inicio',
+                        'visit-tool': 'Visitar Herramienta →',
+                        'tools': {
+                            'tableau': 'Plataforma líder de visualización de datos e inteligencia empresarial.',
+                            'power-bi': 'Herramienta de análisis y visualización empresarial de Microsoft.',
+                            'looker': 'Plataforma de inteligencia empresarial y análisis de datos.',
+                            'qlik': 'Plataforma de análisis y visualización de datos impulsada por IA.',
+                            'datarobot': 'Plataforma de IA empresarial para aprendizaje automático automatizado.',
+                            'h2o-ai': 'Plataforma de IA de código abierto para aprendizaje automático y ciencia de datos.',
+                            'rapidminer': 'Plataforma de ciencia de datos para aprendizaje automático y análisis predictivo.',
+                            'databricks': 'Plataforma de análisis unificada para big data e IA.',
+                            'dataiku': 'Plataforma colaborativa de ciencia de datos y aprendizaje automático.',
+                            'alteryx': 'Plataforma de análisis de datos y aprendizaje automático de extremo a extremo.',
+                            'knime': 'Plataforma de análisis de datos y aprendizaje automático de código abierto.',
+                            'rapidminer-studio': 'Plataforma completa de flujo de trabajo de ciencia de datos y aprendizaje automático.'
+                        }
+                    }
+                    // 可以继续添加其他语言的翻译
+                };
+                
+                // Apply translations if available
+                if (translations[lang]) {
+                    const t = translations[lang];
+                    
+                    // Update page title and subtitle
+                    document.querySelector('h1').textContent = t['title'];
+                    document.querySelector('header p').textContent = t['subtitle'];
+                    
+                    // Update "Back to Home" button
+                    document.querySelectorAll('a[href="./index.html"]').forEach(link => {
+                        if (link.classList.contains('bg-blue-600')) {
+                            link.textContent = t['back-to-home'];
+                        }
+                    });
+                    
+                    // Update tool descriptions
+                    const toolDescriptions = document.querySelectorAll('.bg-gray-800 p.text-gray-300');
+                    toolDescriptions.forEach(desc => {
+                        const toolName = desc.previousElementSibling.textContent.toLowerCase().replace(/\s+/g, '-');
+                        if (t.tools[toolName]) {
+                            desc.textContent = t.tools[toolName];
+                        }
+                    });
+                    
+                    // Update "Visit Tool" links
+                    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+                        if (link.textContent.includes('Visit Tool') || link.textContent.includes('访问工具')) {
+                            link.textContent = t['visit-tool'];
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
